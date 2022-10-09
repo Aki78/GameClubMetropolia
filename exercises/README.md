@@ -3,5 +3,5 @@ Make a game with 4 buttons on the screen adges, and print the button number on t
 
 
 
-![](exercise1.mkv)
+![](./exercise1.mkv)
 
