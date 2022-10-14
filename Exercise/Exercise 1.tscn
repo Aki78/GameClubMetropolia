@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Exercise 1.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Button 1" type="Button" parent="."]
+margin_right = 141.0
+margin_bottom = 58.0
+text = "Button 1"
+
+[node name="Button 2" type="Button" parent="."]
+margin_left = 882.0
+margin_right = 1023.0
+margin_bottom = 58.0
+text = "Button 2"
+
+[node name="Button 3" type="Button" parent="."]
+margin_top = 539.0
+margin_right = 141.0
+margin_bottom = 597.0
+text = "Button 3"
+
+[node name="Button 4" type="Button" parent="."]
+margin_left = 882.0
+margin_top = 539.0
+margin_right = 1023.0
+margin_bottom = 597.0
+text = "Button 4"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 763.0
+margin_top = 292.0
+margin_right = 913.0
+margin_bottom = 364.0
+text = "Button 5"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 418.0
+margin_top = 262.0
+margin_right = 590.0
+margin_bottom = 345.0
+text = "Center"
+align = 1
+valign = 1
+
+[connection signal="pressed" from="Button 1" to="." method="_on_Button_1_pressed"]
+[connection signal="pressed" from="Button 2" to="." method="_on_Button_2_pressed"]
+[connection signal="pressed" from="Button 3" to="." method="_on_Button_3_pressed"]
+[connection signal="pressed" from="Button 4" to="." method="_on_Button_4_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
