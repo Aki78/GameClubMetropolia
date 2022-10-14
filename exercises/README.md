@@ -14,7 +14,7 @@ hint 2) var some_label = Label.new() creates a Label node
 
 hint 3) add_child(some_label) will add a child to the node
 
-## Exercise 2
+## Exercise 3
 Make the Godot icon go back and forth the screen.
 
 ![](exercise3.gif)
