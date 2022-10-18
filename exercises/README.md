@@ -24,9 +24,10 @@ hint 1) otherwise use else if, with _physics_process(delta), or use physics rela
 hint 2) if you use _physics_process(delta), you might need a flag to determine if it is going left or right, and add
  100*delta to the x position.
 
-hint 3) make 2 squares move independently based on different keystrokes.
 
 
+## Exercise 4
+make 2 squares move independently based on different keystrokes.
 
 ![](exercise4.gif)
 
