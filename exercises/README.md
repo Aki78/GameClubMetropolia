@@ -57,3 +57,16 @@ Mirror a text input
 hint 1) use lineedit node
 
 hint 2) emit an apropriate signal
+
+
+## Exercise 7
+Bounce a ball around the screen like a DVD player. (no coding required but  very tricky)
+
+
+![](exercise7.gif)
+
+hint 1) use RigidBody2D node, and set gravity scale to 0, linear velocity (which is the initial velocity) to 100, 100. Damping to 0. Mode to Chharacter, and add an icon and collisionshape2d
+
+hint 2) Create 4 walls with Staticbody2D with a collisionshape2d child, make a physics material (right click on res:// then new_resource) and add that created material. Bounce should be 1 too.
+
+hint3) make all damping gravity scale and friction zero. Also go to project settings, phsycis>2D and set everything to zero there too 
