@@ -1,16 +1,17 @@
 extends Node2D
 
+onready var my_rect = $ColorRect
+onready var my_rect2 = $ColorRect2
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	if Input.is_action_pressed("ui_up"):
+		my_rect.rect_position.y -= 300*delta
+	if Input.is_action_pressed("ui_down"):
+		my_rect.rect_position.y += 300*delta
+	if Input.is_action_pressed("up_left_up"):
+		my_rect2.rect_position.y -= 300*delta
+	if Input.is_action_pressed("up_left_down"):
+		my_rect2.rect_position.y += 300*delta
