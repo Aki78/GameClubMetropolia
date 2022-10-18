@@ -14,6 +14,8 @@ hint 2) var some_label = Label.new() creates a Label node
 
 hint 3) add_child(some_label) will add a child to the node
 
+hint 4) you can use timer node
+
 ## Exercise 3
 Make the Godot icon go back and forth the screen.
 
@@ -45,3 +47,13 @@ Drop an object onto a hard surface
 hint 1) use rigidbody2d node with collisionshap2D node as a child for the drop
 
 hint 2) use kinematicbody2d node with collisionshap2d as a child
+
+
+## Exercise 6
+Mirror a text input
+
+![](exercise6.mkv)
+
+hint 1) use lineedit node
+
+hint 2) emit an apropriate signal
