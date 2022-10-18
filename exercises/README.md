@@ -35,3 +35,13 @@ make 2 squares move independently based on different keystrokes.
 hint 1) you can use color_rect node for the squares.
 
 hint 2) you can use input map in the settings. with _physics_process.
+
+
+## Exercise 5
+Drop an object onto a hard surface
+
+![](exercise5.gif)
+
+hint 1) use rigidbody2d node with collisionshap2D node as a child for the drop
+
+hint 2) use kinematicbody2d node with collisionshap2d as a child
