@@ -52,7 +52,7 @@ hint 2) use kinematicbody2d node with collisionshap2d as a child
 ## Exercise 6
 Mirror a text input
 
-![](exercise6.mkv)
+![](exercise6.git)
 
 hint 1) use lineedit node
 
