@@ -70,3 +70,6 @@ hint 1) use RigidBody2D node, and set gravity scale to 0, linear velocity (which
 hint 2) Create 4 walls with Staticbody2D with a collisionshape2d child, make a physics material (right click on res:// then new_resource) and add that created material. Bounce should be 1 too.
 
 hint3) make all damping gravity scale and friction zero. Also go to project settings, phsycis>2D and set everything to zero there too 
+
+## Exercise 8
+Make Pong!
