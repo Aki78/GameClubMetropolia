@@ -72,4 +72,29 @@ hint 2) Create 4 walls with Staticbody2D with a collisionshape2d child, make a p
 hint3) make all damping gravity scale and friction zero. Also go to project settings, phsycis>2D and set everything to zero there too 
 
 ## Exercise 8
-Make Pong!
+We are ready to Make Pong!
+
+
+hint 1) combine previous exercises.
+
+hint 2) You can always free and add children. (like the ball)
+
+
+## Exercise 9
+Make a nice looking HUD for the pong you made.
+
+
+hint 1) Instead of buttons, you can use texture button and find assets for it.
+
+hint 2) Find a nice background.
+
+hint 3) use get_tree().change_scene() or get_tree().change_scene_to() for transitioning scenes.
+
+hint 4) (optional) If motivated, nice animations and music like phasing in and running theme music would be nice.
+
+
+## Exercise 10
+Add sound effects to the pong you made.
+
+
+hint 1) You can use AudioStreamPlayer node.
