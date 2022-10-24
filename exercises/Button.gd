@@ -10,5 +10,4 @@ extends Button
 #	pass
 
 func _on_Button_pressed():
-	get_parent().get_node("Label").text = "Button 1"
-
+	get_parent().get_node("Label1").text = "Button 1"
