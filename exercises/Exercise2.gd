@@ -8,8 +8,7 @@ extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	#add_child(some_label)
 
 
 #var some_label = label.new()
+
