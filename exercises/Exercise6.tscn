@@ -1,0 +1,15 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 333.0
+margin_top = 236.0
+margin_right = 627.0
+margin_bottom = 260.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 342.0
+margin_top = 340.0
+margin_right = 624.0
+margin_bottom = 354.0
