@@ -1,18 +1,50 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Exercise4.gd" type="Script" id=2]
+
+[sub_resource type="PhysicsMaterial" id=3]
+friction = 0.0
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12, 128 )
+
+[sub_resource type="PhysicsMaterial" id=4]
+friction = 0.0
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 12, 128 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 300.0
-margin_top = 150.0
-margin_right = 324.0
-margin_bottom = 406.0
+margin_left = 10.0
+margin_top = 152.0
+margin_right = 34.0
+margin_bottom = 408.0
+
+[node name="RigidBody2D" type="RigidBody2D" parent="ColorRect"]
+physics_material_override = SubResource( 3 )
+gravity_scale = 0.0
+linear_damp = 0.0
+angular_damp = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/RigidBody2D"]
+position = Vector2( 12, 128 )
+shape = SubResource( 1 )
 
 [node name="ColorRect2" type="ColorRect" parent="."]
-margin_left = 500.0
+margin_left = 990.0
 margin_top = 150.0
-margin_right = 524.0
+margin_right = 1014.0
 margin_bottom = 406.0
+
+[node name="RigidBody2D" type="RigidBody2D" parent="ColorRect2"]
+physics_material_override = SubResource( 4 )
+gravity_scale = 0.0
+linear_damp = 0.0
+angular_damp = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect2/RigidBody2D"]
+position = Vector2( 12, 128 )
+shape = SubResource( 2 )
