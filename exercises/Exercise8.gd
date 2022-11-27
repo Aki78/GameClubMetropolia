@@ -2,6 +2,7 @@ extends Node2D
 
 var inp3
 var inp4
+var inp_pause
 var score3 = 0
 var score4 = 0
 onready var ball_position
@@ -9,6 +10,7 @@ onready var ball_position
 func _physics_process(delta):
 	inp3 = Input.get_action_strength("ui2_down") - Input.get_action_strength("ui2_up")
 	inp4 = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	inp_pause = Input.get_action_strength("ui_home")
 	$Box3/CollisionShape2D.position.y += 1400*delta*inp3
 	$Box4/CollisionShape2D.position.y += 1400*delta*inp4
 	ball_position = $Ball.position.x
@@ -18,7 +20,11 @@ func _physics_process(delta):
 		score3 =score3+1
 	$ScoreLabel3.text=str(score3)
 	$ScoreLabel4.text=str(score4)
-
+	
+func _unhandled_input(event):
+	if event is InputEventKey:
+		if event.pressed and event.scancode == KEY_ESCAPE:
+			get_tree().change_scene("res://Exercise9.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
