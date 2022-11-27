@@ -7,7 +7,6 @@ extents = Vector3( 0.0605966, 0.0820197, 0.0733364 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.817901 )
-visible = false
 
 [node name="Rigid body" type="RigidBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.207782, 0, 0 )

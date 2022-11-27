@@ -13,12 +13,13 @@ extents = Vector2( 16, 16 )
 polygon = PoolVector2Array( 304, 583, 357, 578, 384, 506, 410, 564, 422, 579, 449, 586, 500, 583, 540, 564, 558, 586, 567, 599, 302, 600 )
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
+mode = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2( 458, 421 )
+position = Vector2( 407, 481 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="RigidBody2D"]
-position = Vector2( 458, 421 )
+position = Vector2( 407, 481 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
