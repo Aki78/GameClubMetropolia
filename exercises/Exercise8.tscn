@@ -1,7 +1,9 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Exercise8.gd" type="Script" id=1]
 [ext_resource path="res://ball.png" type="Texture" id=2]
+[ext_resource path="res://sound1.mp3" type="AudioStream" id=3]
+[ext_resource path="res://AudioStreamPlayer.gd" type="Script" id=4]
 
 [sub_resource type="PhysicsMaterial" id=6]
 friction = 0.0
@@ -43,8 +45,6 @@ gradient = SubResource( 13 )
 
 [sub_resource type="GradientTexture2D" id=16]
 gradient = SubResource( 15 )
-
-[sub_resource type="AudioStreamGenerator" id=17]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -127,4 +127,7 @@ align = 1
 valign = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = SubResource( 17 )
+stream = ExtResource( 3 )
+script = ExtResource( 4 )
+
+[connection signal="ready" from="AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_ready"]

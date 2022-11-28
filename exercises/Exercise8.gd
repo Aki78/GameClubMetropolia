@@ -15,8 +15,10 @@ func _physics_process(delta):
 	$Box4/CollisionShape2D.position.y += 1400*delta*inp4
 	ball_position = $Ball.position.x
 	if $Ball.position.x < 5:
+		$AudioStreamPlayer.play_beep()
 		score4 = score4+1
 	if $Ball.position.x > 1019:
+		$AudioStreamPlayer.play_beep()
 		score3 =score3+1
 	$ScoreLabel3.text=str(score3)
 	$ScoreLabel4.text=str(score4)
@@ -32,3 +34,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_AudioStreamPlayer_ready():
+	pass # Replace with function body.
