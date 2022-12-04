@@ -107,3 +107,12 @@ Make the letter A rotate along the y-axis and z-axis.
 hint 1) you can use set_rotate(get_rotation + delta) for y-axis in _physics_process, or use animation node, or use some interpolation method. 
 
 hint 2) there is an image sequence in the main git bransh which you can use in AnimatedSprite node. (if you are motivated you can try out a 3D scene instead)
+
+## Exercise 12
+Use tween for an Icon to follow your mouse click. The click should be disabled while the Icon is moving.
+
+![](exercise12.gif)
+
+hint 1) Use tween node, with yield.
+
+hint 2) Just for simplicity, you can use the button as the whole back ground.
