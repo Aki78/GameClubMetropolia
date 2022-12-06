@@ -116,3 +116,14 @@ Use tween for an Icon to follow your mouse click. The click should be disabled w
 hint 1) Use tween node, with yield.
 
 hint 2) Just for simplicity, you can use the button as the whole back ground.
+
+## Exercise 13
+Use a Camera2D node and control the camera with the mouse. 1) jump to the center of an Icon (texture button) on hover. 2) zoom in and out with mouse wheel. 3) (Advanced) Drag the camera around with the mouse while left mouse button is pressed.
+
+![](exercise13.gif)
+
+hint 1) Use tween node, and tween the offset of the camera.
+
+hint 2) Use input of the mouse wheel to zoom in by zoom *= 0.9, for example.
+
+hint 3) This is quite advanced. Make a flag that changes to true while mouse button is down, then store the mouse position from before, and update the offset by taking the difference of the current mouse position and last mouse position in the physics loop. You will have to scale the difference with some factor so it doesn't move too much or too little.
