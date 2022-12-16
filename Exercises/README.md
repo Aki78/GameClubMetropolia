@@ -127,3 +127,15 @@ hint 1) Use tween node, and tween the offset of the camera.
 hint 2) Use input of the mouse wheel to zoom in by zoom *= 0.9, for example.
 
 hint 3) This is quite advanced. Make a flag that changes to true while mouse button is down, then store the mouse position from before, and update the offset by taking the difference of the current mouse position and last mouse position in the physics loop. You will have to scale the difference with some factor so it doesn't move too much or too little.
+
+
+## Exercise 14
+Use Particle2D node to create an explosion where you click a mouse.
+
+![](exercise14.gif)
+
+hint 1) make a particle material in the inspector (process material) and click on the material. you can then change parameters
+
+hint 2) add texture in the inspector
+
+hint 3) chatGPT will make the coding process much easier lol.
