@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TextureButton16.gd" type="Script" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+
+[node name="Exercise16" type="Control"]
+
+[node name="ColorRects" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="ColorRects"]
+margin_left = 169.0
+margin_top = 258.0
+margin_right = 209.0
+margin_bottom = 298.0
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRects"]
+margin_left = 712.0
+margin_top = 276.0
+margin_right = 752.0
+margin_bottom = 316.0
+
+[node name="TextureButton16" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 3 )
+script = ExtResource( 2 )
+
+[node name="Tween" type="Tween" parent="TextureButton16"]
+
+[connection signal="mouse_entered" from="TextureButton16" to="TextureButton16" method="_on_TextureButton16_mouse_entered"]
+[connection signal="mouse_exited" from="TextureButton16" to="TextureButton16" method="_on_TextureButton16_mouse_exited"]
