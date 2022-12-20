@@ -139,3 +139,14 @@ hint 1) make a particle material in the inspector (process material) and click o
 hint 2) add texture in the inspector
 
 hint 3) chatGPT will make the coding process much easier lol.
+
+## Exercise 15
+make a draggable object that is sucked into two different regions if it comes close enough when the mouse button is unpressed.
+
+![](exercise15.gif)
+
+hint 1) Tween is always nice to give a nice visual effect.
+
+hint 2) You need to make logics for mouse inputs.
+
+hint 3) Control the position of the TextureButton in _process or _physics_process when the mouse is down.
