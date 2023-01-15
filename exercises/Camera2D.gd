@@ -9,13 +9,14 @@ var des_zoom: = zoom
 
 var flag = false
 var mousepos
-var difference
+var mouseposOld = Vector2(0,0)
 
 func _process(delta: float) -> void:
 	zoom = lerp(zoom, des_zoom, lerp_speed)
 	if flag == true:
 		mousepos = get_viewport().get_mouse_position()
-		position = mousepos
+		position += 50*delta*(-mousepos + mouseposOld)
+		mouseposOld = mousepos
 		
 		
 func _input(event: InputEvent) -> void:
