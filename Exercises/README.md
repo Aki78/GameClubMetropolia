@@ -150,3 +150,18 @@ hint 1) Tween is always nice to give a nice visual effect.
 hint 2) You need to make logics for mouse inputs.
 
 hint 3) Control the position of the TextureButton in _process or _physics_process when the mouse is down.
+
+## Exercise 16
+Make a saveable todo list App
+
+## Exercise 17
+Compile the todo list app to html, and run upload it to itch.io. Make it mobile friendly, and runable on the browser.
+
+## Exercise 18
+Do the same but with Android.
+
+## Exercise 19
+Make a simple drawing app like paint.
+
+## Exercise 20
+Add fancy sound effects, and visual effects to your todo list app. Use at least one shader object. 
